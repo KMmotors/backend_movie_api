@@ -6,10 +6,10 @@ import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service // resgister class as spring_bean
 public class MovieService {
 
-    @Autowired
+    @Autowired // asks spring to provie the Movie_Repository
     private MovieRepository movieRepository;
 
     public List<Movie> allMovies() {
